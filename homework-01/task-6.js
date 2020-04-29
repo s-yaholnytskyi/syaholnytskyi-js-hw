@@ -1,13 +1,13 @@
-let message = 1
-let total = 0
+let message = 1;
+let total = 0;
 
 while (true) {
-    message = prompt('Enter a number')
+    message = prompt('Enter a number');
     if (message === null) {
-        break
+        break;
     } else {
-    total += parseInt(message)
+    total += parseInt(message);
     }
 }
 
-alert(`Total sum is ${total}`)
+alert(`Total sum is ${total}`);
