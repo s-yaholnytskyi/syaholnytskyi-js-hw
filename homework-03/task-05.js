@@ -7,7 +7,7 @@ const products = [
 
 const getAllPropValues = function (arr, prop) {
   return arr.reduce(
-    (a, b) => (b[prop] !== undefined ? a.concat([b[prop]]) : []),
+    (a, b) => (b[prop] !== undefined ? a.concat([b[prop]]) : a),
     [],
   );
 };
