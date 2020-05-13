@@ -1,5 +1,6 @@
 function Account({ login, email }) {
-  (this.login = login), (this.email = email);
+  this.login = login;
+  this.email = email;
 }
 
 Account.prototype.getInfo = function () {
