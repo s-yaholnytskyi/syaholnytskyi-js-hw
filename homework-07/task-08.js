@@ -3,7 +3,7 @@ const createBtn = document.querySelector('[data-action=render]');
 const clrBtn = document.querySelector('[data-action=destroy]');
 const boxes = document.getElementById('boxes');
 const input = document.querySelector('#controls input');
-const divSize = 20;
+const divSize = 30;
 let counter = 0;
 
 console.log(input.value);
@@ -17,10 +17,10 @@ createBtn.onclick = () => {
       Math.floor(Math.random() * 250),
       Math.floor(Math.random() * 250),
     ];
-    counter += i;
     result += `<div style="width: ${divSize + counter * 10}px; height: ${
       divSize + counter * 10
     }px; background-color: rgb(${color[0]}, ${color[1]}, ${color[2]});"></div>`;
+    counter += 1;
   }
   boxes.insertAdjacentHTML('beforeend', result);
 };
