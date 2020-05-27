@@ -3,7 +3,7 @@ const createBtn = document.querySelector('[data-action=render]');
 const clrBtn = document.querySelector('[data-action=destroy]');
 const boxes = document.getElementById('boxes');
 const input = document.querySelector('#controls input');
-const divSize = 30;
+const divSize = 20;
 let counter = 0;
 
 console.log(input.value);
