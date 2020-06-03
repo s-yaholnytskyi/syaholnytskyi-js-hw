@@ -107,6 +107,7 @@ body {
 
 .lightbox.is-open .lightbox__content {
   transform: scale(1);
+  pointer-events: none;
 }
 
 .lightbox__button {
